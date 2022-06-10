@@ -1,0 +1,70 @@
+/* The "*" selector selects all content on the page */
+* {
+  /* border-box box sizing sets it up so that the box size is calculated by including
+  the content, padding, and border in the pixel size. The margin is not included */
+  box-sizing: border-box;
+}
+
+/* .wrapper styles affect all visible content on the web page */
+.wrapper {
+  margin: 0 auto; /* Centers the content on the page */
+}
+
+.container {
+  padding-left: 1em; /* adds slight padding to left side of main content */
+  padding-right: 1em; /* adds slight padding to left side of main content */
+  margin: 0 auto; /* Centers the main content in the container on the page */
+}
+
+header {
+  background-color: rgb(206, 249, 235); /* Header background color */
+}
+
+.hero-title {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0; /* Removes the whitespace between h1 and the top of the page */
+}
+
+/* body{} styles all content in the body of the page */
+body {
+    font-family: "Open Sans", sans-serif; /* sets default font */
+    box-sizing: border-box; /* box size includes content, padding, and border */
+  }
+
+footer {
+  background-color: rgb(206, 249, 235);
+  margin-bottom: 0;
+}
+
+.footer-heading {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+  /* Common Media Query Breakpoints: 
+      320px — 480px: Mobile devices
+      481px — 768px: iPads, Tablets
+      769px — 1024px: Small screens, laptops
+      1025px — 1200px: Desktops, large screens
+      1201px and more —  Extra large screens, TV
+  */
+
+  
+
+  /* Building up from min-width is the mobile-first approach. CSS will 
+  be applied only when browser window is above a certain size */
+  @media only screen and (min-width: 600px) {
+
+    .hero-title {
+      font-size: 4.5rem;
+    }
+
+    .container {
+      width: 70%; /* Limits layout width on larger screens */
+      max-width: 1000px; /* Even on larger screens, container div will only be 1000px wide */
+      margin: 0 auto; /* Removes top/bottom margins and centers content */
+    }
+  }
